@@ -1,0 +1,29 @@
+
+#!/bin/sh
+
+
+case "$1" in
+    start) 
+        echo "Loding"
+        insmod /usr/bin/hello.ko 
+        modprobe faulty
+        modprobe scull
+        /usr/bin/module_load  faulty
+        /usr/bin/scull_load
+          
+        ;;
+    stop)
+        echo "Unloading"
+        rmmod hello
+        rmmod faulty
+        rmmod scull 
+        
+        /usr/bin/module_load  faulty
+        /usr/bin/scull_load
+
+        ;;
+    *)
+        echo "Usage: $0 {start|stop}"
+        exit 1
+    esac
+    exit 0
