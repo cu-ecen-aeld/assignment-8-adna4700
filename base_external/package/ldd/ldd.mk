@@ -10,7 +10,7 @@ LDD_VERSION = 5a7423a0415ab3d850e94c55c865cf51dc847244
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 LDD_SITE = git@github.com:cu-ecen-aeld/assignment-7-adna4700.git
-LDD_METHOD = git
+LDD_SITE_METHOD = git
 LDD_GIT_SUBMODULES = YES
 
 #supports building and installing the misc-modules and scull components into the root filesystem.
