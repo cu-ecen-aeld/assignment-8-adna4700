@@ -10,6 +10,7 @@ case "$1" in
         modprobe scull
         /usr/bin/module_load  faulty
         /usr/bin/scull_load
+        /usr/bin/aesdchar_load
           
         ;;
     stop)
@@ -20,6 +21,7 @@ case "$1" in
         
         /usr/bin/module_load  faulty
         /usr/bin/scull_load
+        /usr/bin/aesdchar_unload
 
         ;;
     *)
